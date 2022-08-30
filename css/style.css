@@ -207,6 +207,38 @@ h6,
     }
 }
 
+/*** Video ***/
+
+#videoar{
+    width: 550px;
+    height: 350px;
+}
+
+#img-services {
+    width: 250px;
+    height: 480px;
+}
+@media screen {
+    @media screen and (max-width: 500px) {
+        #videoar{
+            width: 300px;
+            height: 250px;
+            margin-top: -30px;   
+        }
+      } 
+}
+
+#contenedor-headerr{
+    margin-top: -150px;
+}
+
+@media screen {
+    @media screen and (max-width: 500px) {
+        #contenedor-headerr{
+            margin-top: 1px;      
+        }
+      } 
+}
 
 /*** Hero Header ***/
 .hero-header {
@@ -589,3 +621,4 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
+
