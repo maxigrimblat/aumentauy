@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="/img/Aumenta2.png" alt="logo" id="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CÁTALOGOS AR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SOSBRE AR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="info-clientes">
+                    <img src="/img/logos/cebala.png" alt="logocebala" id="logocebala">
+                    <h1 id="zamibiadeco" class="h1-clientes">@cebalauy
+                    </h1>
+                    <a href="https://www.cebala.com/es/" a8="click;discover;click-industry-carousel-explore-all"><button
+                            class="botones-paginas" type="button">Contáctanos</button></a>
+                </div>
+                <div class="col-md-6">
+                    <iframe width="560" id="videoyoutube" height="315"
+                        src="https://www.youtube.com/embed/2-a6JJYxQ6A?controls=0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay   clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos" id="card-gruop">
+        <div class="row row-cols-1 row-cols-md-3 g-4 " id="card-gruop">
+            <div class="card h-100">
+                <model-viewer
+                    src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/matera3.glb?v=1661283968139"
+                    ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/matera3.usdz?v=1661283971097"
+                    camera-controls auto-rotate ar>
+                </model-viewer>
+                <div class="card-body">
+                    <h5 id="texto-centrado" class="card-title">Mochila matera</h5>
+                    <p>Fabricada con cuero vacuno y lona de algodón de la más alta calidad. Cuenta con un compartimiento
+                        interior para transportar la laptop de forma segura.</p>
+                    <p>En su exterior, tiene un bolsillo diseñado para llevar el mate, un agarre especial para el termo
+                        y adaptación para llevar a nuestra matera Pampita. Además, cuenta con bolsillo delantero con
+                        cierre lateral.
+                        Tiene una capacidad para una computadora de 25 pulgadas.</p>
+                </div>
+            </div>
+            <div class="card h-100!important">
+                <model-viewer
+                    src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/matera2.glb?v=1661283975575"
+                    ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/matera2.usdz?v=1661283979691"
+                    camera-controls auto-rotate ar>
+
+                </model-viewer>
+                <div class="card-body ">
+                    <h5 id="texto-centrado" class="card-title">Matera cuero crudo</h5>
+                    <p>Matera hecha en cuero crudo y tiento con manija trenzada. La base, así como el separador son
+                        completamente de madera.</p>
+                    <p>Este modelo es apto para cualquier tipo de termo y aguanta bien para llevarla en el auto.</p>
+                </div>
+            </div>
+            <div class="card h-100">
+                <model-viewer
+                    src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/matera1.glb?v=1661283983890"
+                    ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/matera1.usdz?v=1661283988065"
+                    camera-controls auto-rotate ar>
+                </model-viewer>
+                <div class="card-body ">
+                    <h5 id="texto-centrado" class="card-title">Matera Pampita Stanley</h5>
+                    <p>La matera pampita es la mejor opción para vos que andas con el mate para todos lados. Su
+                        estructura permite reducir su tamaño fácilmente para que no sea una carga cuando esta no está en
+                        uso.</p>
+                    <p>Construida en tela, con una madera central de bamboo, permite que al poner el termo y el mate,
+                        estos queden firmes gracias a su capacidad de ajuste, sin tener que ocupar más espacio del
+                        necesario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+    <section id="footer">
+        <footer>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a1e2cb9fee.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+</body>
+
+</html>
