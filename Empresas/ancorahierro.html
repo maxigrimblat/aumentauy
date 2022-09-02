@@ -39,7 +39,7 @@
 
 <body>
     <section id="menu">
-        <div class="container-xxl bg-white p-0">
+        <div class="container-fluid bg-white p-0">
             <!-- Spinner Start -->
             <div id="spinner"
                 class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -51,7 +51,7 @@
 
 
             <!-- Navbar & Hero Start -->
-            <div class="container-xxl position-relative p-0">
+            <div class="container-fluid position-relative p-0">
                 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                     <a href="" class="navbar-brand p-0">
                         <img src="/img/logos/logoblanco.png" alt="Logo">
@@ -77,11 +77,12 @@
                     </div>
                 </nav>
             </div>
+        </div>
     </section>
     <!-- Navbar & Hero End -->
     <!-- About Start -->
     <section id="infoempresas">
-        <div class="container-xxl py-5">
+        <div class="container-fluid py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center" id="info-empresa">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -112,75 +113,76 @@
     <!-- About End -->
     <section id="info">
         <section class="productos" id="card-gruop">
-            <div class="row row-cols-1 row-cols-md-3 g-4 " id="card-gruop">
-                <div class="col" id="card-productos">
-                    <div class="card h-100">
-                        <model-viewer id="model2"
-                            src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/racktvancora.glb?v=1657753399966"
-                            ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/racktvancora.usdz?v=1657753408812"
-                            camera-controls auto-rotate ar>
-                        </model-viewer>
-                        <div class="card-body">
-                            <h5 id="texto-centrado" class="card-title">Tv Paraiso
-                            </h5>
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 g-4 " id="card-gruop">
+                    <div class="col" id="card-productos">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/racktvancora.glb?v=1657753399966"
+                                ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/racktvancora.usdz?v=1657753408812"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 id="texto-centrado" class="card-title">Tv Paraiso
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Racktvescandilavo.glb?v=1657509837218"
+                                ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Racktvescandilavo.usdz?v=1657509841845"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 id="texto-centrado" class="card-title">Rack tv Escandilavo</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/mesadeluzancora.glb?v=1657753577212"
+                                ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/mesadeluzancora.usdz?v=1657753582453"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 id="texto-centrado" class="card-title">Escandinavo</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/escritorio.glb?v=1661452713453"
+                                ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/escritorio.usdz?v=1661452715705"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 id="texto-centrado" class="card-title">Escritorio Escandinavo</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesaancora.glb?v=1661449614882"
+                                ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesaancora.usdz?v=1661449616303"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 id="texto-centrado" class="card-title">Vajillero</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <model-viewer id="model2"
-                            src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Racktvescandilavo.glb?v=1657509837218"
-                            ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Racktvescandilavo.usdz?v=1657509841845"
-                            camera-controls auto-rotate ar>
-                        </model-viewer>
-                        <div class="card-body">
-                            <h5 id="texto-centrado" class="card-title">Rack tv Escandilavo</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <model-viewer id="model2"
-                            src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/mesadeluzancora.glb?v=1657753577212"
-                            ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/mesadeluzancora.usdz?v=1657753582453"
-                            camera-controls auto-rotate ar>
-                        </model-viewer>
-                        <div class="card-body">
-                            <h5 id="texto-centrado" class="card-title">Escandinavo</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <model-viewer id="model2"
-                            src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/escritorio.glb?v=1661452713453"
-                            ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/escritorio.usdz?v=1661452715705"
-                            camera-controls auto-rotate ar>
-                        </model-viewer>
-                        <div class="card-body">
-                            <h5 id="texto-centrado" class="card-title">Escritorio Escandinavo</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <model-viewer id="model2"
-                            src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesaancora.glb?v=1661449614882"
-                            ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesaancora.usdz?v=1661449616303"
-                            camera-controls auto-rotate ar>
-                        </model-viewer>
-                        <div class="card-body">
-                            <h5 id="texto-centrado" class="card-title">Vajillero</h5>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
         <!-- Facts End -->
         <!-- Facts Start -->
         <section id="card-gruop">
-            <div class="container-xxl bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container-fluid bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container py-5 px-lg-5">
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">

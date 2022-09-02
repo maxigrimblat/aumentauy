@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Nuestros Servicios</title>
+    <title>Personajes en Realidad Aumentada</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -62,6 +62,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="#" class="nav-item nav-link">Personajes en AR</a>
                         <a href="about.html" class="nav-item nav-link">Nosotros</a>
                         <a href="service.html" class="nav-item nav-link">Sobre AR</a>
                         <div class="nav-item dropdown">
@@ -80,7 +81,7 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated slideInDown">Servicios</h1>
+                            <h1 class="text-white animated slideInDown">Personajes en Ralidad Aumentada</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
@@ -88,7 +89,7 @@
                                     </li>
                                     <li class="breadcrumb-item"><a class="text-white"
                                             href="contacto.html">Contacto</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Nuestros Servicios</li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Personajes en Realidad Aumentada</li>
                                 </ol>
                             </nav>
                         </div>
@@ -103,46 +104,49 @@
             <div class="container py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
                     <p id="nuestroservicio" class="section-title text-secondary justify-content-center">
-                        <span></span>NUESTROS
-                        SERVICIOS<span></span>
+                        <span></span>¿Jugamos con la realidad… aumentada?<span></span>
                     </p>
-                    <h1 class="text-center mb-5">Qué soluciones ofrecemos</h1>
+                    <h1 class="text-center mb-5"> Te invito a ver como los personajes  cobran vida.</h1>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" id="columnas-personajes">
                         <div class="service-item d-flex flex-column text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-facebook-f fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Filtros </h5>
-                            <p class="m-0">A través de SparkAR creamos experiencias, juegos y demos de productos para
-                                Instagram y
-                                Facebook.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <model-viewer id="model4"
+                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/disney_infinity_woody.glb?v=1662137206978"
+                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Disney_Infinity_Woody.usdz?v=1662137213944"
+                            camera-controls auto-rotate ar>
+                        </model-viewer>
+                        <h5 class="mb-3">Woody</h5>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column text-center rounded h-100">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-laptop-code fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Realidad Aumentada</h5>
-                            <p class="m-0">Complementamos la realidad con elementos digitales que se visualizan a través
-                                de la cámara de
-                                dispositivos móviles.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <model-viewer id="model4"
+                        src="https://cdn.glitch.me/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/buzz.glb?v=1662140040163"
+                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Buzz.usdz?v=1662140042211"
+                            camera-controls auto-rotate ar>
+                        </model-viewer>
+                        <h5 class="mb-3">Buzz</h5>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item d-flex flex-column text-center rounded h-100">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-thumbs-up fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Experiencias Web 3D</h5>
-                            <p class="m-0">Creamos sitios web con contenido interactivo 3D para visualizar productos,
-                                videojuegos y mucho
-                                más.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <model-viewer id="model4"
+                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/sgp24_yoda_master.glb?v=1662140289532"
+                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/SGP24_Yoda_Master.usdz?v=1662140296616"
+                            camera-controls auto-rotate ar>
+                        </model-viewer>
+                        <h5 class="mb-3">Yoda</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <model-viewer id="model4"
+                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Project%20Name(15).glb?v=1662140692682"
+                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/2bd3d61e-23f1-4832-a4cd-e478f3b7f856.usdz?v=1662140694911"
+                            camera-controls auto-rotate ar>
+                        </model-viewer>
+                        <h5 class="mb-3"> La'eeb Mascota del mundial</h5>
                         </div>
                     </div>
                 </div>

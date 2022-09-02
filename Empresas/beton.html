@@ -2,372 +2,526 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/css/estilos.css">
+    <meta charset="utf-8">
+    <title>Catalagos en Realidad Aumentada</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+    <script src="https://kit.fontawesome.com/a1e2cb9fee.js" crossorigin="anonymous"></script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- carrousel -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <section>
-        <header>
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="/img/Aumenta2.png" alt="logo" id="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars"></i>
+    <section id="menu">
+        <div class="container-fluid bg-white p-0">
+            <!-- Spinner Start -->
+            <div id="spinner"
+                class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+
+
+            <!-- Navbar & Hero Start -->
+            <div class="container-fluid position-relative p-0">
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                    <a href="" class="navbar-brand p-0">
+                        <img src="/img/logos/logoblanco.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SERVICIOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CÁTALOGOS AR</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">NOSOTROS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SOSBRE AR</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACTO</a>
-                            </li>
-                        </ul>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto py-0">
+                            <a href="../index.html" class="nav-item nav-link active">Inicio</a>
+                            <a href="../sobre nosotros.html" class="nav-item nav-link">Nosotros</a>
+                            <a href="../servicios.html" class="nav-item nav-link">Sobre AR</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="../servicios.html" class="dropdown-item">Servicios</a>
+                                    <a href="../catalogosar.html" class="dropdown-item">Catalogos AR</a>
+                                </div>
+                            </div>
+                            <a href="../contacto.html" class="nav-item nav-link">Contacto</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </div>
+        </div>
     </section>
-    <section id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" id="info-clientes">
-                    <img src="/img/logobeton.webp" alt="logobeton">
-                    <p class="p-clientes"><b>Todos nuestros productos están realizados de forma artesanal.</b> </p>
-                    <h1 class="h1-clientes">@casa.beton
-                    </h1>
-                    <a href="https://casabeton.com/"
-                        a8="click;discover;click-industry-carousel-explore-all"><button class="botones-paginas"
-                            type="button">Contáctanos</button></a>
-                </div>
-                <div class="col-md-6">
-                    <model-viewer
-                        src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Lunga45cm.glb?v=1659300056021"
-                        ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/1959f313-36b5-45c0-8b19-bc9577b8e9a3%20(1).usdz?v=1659300100586"
-                        camera-controls auto-rotate ar>
-                    </model-viewer>
+    <!-- Navbar & Hero End -->
+    <!-- About Start -->
+    <section id="infoempresas">
+        <div class="container-fluid py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center" id="info-empresa">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img src="../img/logos/logobeton.webp" alt="logo ancora" id="logobeton">
+                        <p class="section-title text-secondary justify-content-center" id="nuestroservicio">
+                            <span></span>¿Jugamos con la realidad… aumentada?
+                            <span></span>
+                        </p>
+                        <h1 class="mb-5">Los elegidos del mes
+                        </h1>
+                        <p class="redes">@casa.beton</p>
+
+                        <a href="https://casabeton.com/"
+                            class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Contáctanos</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/bachita.glb?v=1659298360662"
+                                ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/bacha.usdz?v=1659298363725"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="productos" id="card-gruop">
-        <div class="row row-cols-1 row-cols-md-3 g-4 " id="card-gruop">
-            <div class="col" id="card-productos">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Bacha%20Blad.glb?v=1659494947489"
-                        ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/bacha%20blad.usdz?v=1659494951995"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Bacha Blad</h5>
-                        <p class="card-text">En concreto, oval y elegante.
-                            Disponible en varios colores, un must si sos fan del color y materiales naturales en tu
-                            espacio.Sin dudas se va a llevar todas las miradas.
-                        </p>
-                        <P id="medidas"><b>Medidas:</b> Largo: 60 cm ancho: 37.5 cm | altura interna 6 cm | altura
-                            externa 13.8 cm</P>
-                        <P id="drenaje"><b>Drenaje:</b> 7.5 x 4.6 x 3 cm</P>
-                        <P id="precio"><b>Precio:</b>usd 220</P>
+    <!-- About End -->
+    <section id="info">
+        <section class="productos" id="card-gruop">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 g-4 " id="card-gruop">
+                    <div class="col" id="card-productos">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Bacha%20Blad.glb?v=1659494947489"
+                                ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/bacha%20blad.usdz?v=1659494951995"
+                                camera-controls auto-rotate ar>
+
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Bacha Blad</h5>
+                                <p class="card-text">En concreto, oval y elegante.
+                                    Disponible en varios colores, un must si sos fan del color y materiales naturales en
+                                    tu
+                                    espacio.Sin dudas se va a llevar todas las miradas.
+                                </p>
+                                <P id="medidas"><b>Medidas:</b> Largo: 60 cm ancho: 37.5 cm | altura interna 6 cm |
+                                    altura
+                                    externa 13.8 cm</P>
+                                <P id="drenaje"><b>Drenaje:</b> 7.5 x 4.6 x 3 cm</P>
+                                <P id="precio"><b>Precio:</b>usd 220</P>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/kilde.glb?v=1659494957129"
-                        ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/kilde.usdz?v=1659494960967"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title"> Bacha Kilde</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <P id="medidas"><b>Medidas:</b> Largo: 60 cm ancho: 37.5 cm | altura interna 6 cm | altura
-                            externa 13.8 cm</P>
-                        <P id="drenaje"><b>Drenaje:</b> 7.5 x 4.6 x 3 cm</P>
-                        <P id="precio"><b>Precio:</b>usd 220</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/kilde.glb?v=1659494957129"
+                                ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/kilde.usdz?v=1659494960967"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title"> Bacha Kilde</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <P id="medidas"><b>Medidas:</b> Largo: 60 cm ancho: 37.5 cm | altura interna 6 cm |
+                                    altura
+                                    externa 13.8 cm</P>
+                                <P id="drenaje"><b>Drenaje:</b> 7.5 x 4.6 x 3 cm</P>
+                                <P id="precio"><b>Precio:</b>usd 220</P>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Mesa%20Banco%2045cm.glb?v=1659303964495"
-                        ios-src=https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Mesabanco.usdz?v=1659303953454"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Mesa/ Banco Wale</h5>
-                        <p class="card-text">Sus patas de hierro anchas y planas le dan un look importante y temporal,
-                            sumado a su
-                            textura Wooden, la convierte en única.
-                            Wooden, le llamamos a la hermosa veta de madera reflejada en el concreto, pero también la
-                            realizamos lisa.</p>
-                        <P id="disponible"><b>Disponible en varios colores.</b></P>
-                        <P id="medidas"><b>Medidas:</b> 120 x 45 x 3 cm</P>
-                        <P id="precio"><b>Precio:</b>Usd 320</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Mesa%20Banco%2045cm.glb?v=1659303964495"
+                                ios-src=https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Mesabanco.usdz?v=1659303953454"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa/ Banco Wale</h5>
+                                <p class="card-text">Sus patas de hierro anchas y planas le dan un look importante y
+                                    temporal,
+                                    sumado a su
+                                    textura Wooden, la convierte en única.
+                                    Wooden, le llamamos a la hermosa veta de madera reflejada en el concreto, pero
+                                    también la
+                                    realizamos lisa.</p>
+                                <P id="disponible"><b>Disponible en varios colores.</b></P>
+                                <P id="medidas"><b>Medidas:</b> 120 x 45 x 3 cm</P>
+                                <P id="precio"><b>Precio:</b>Usd 320</P>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Lunga45cm.glb?v=1659300056021"
-                        ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/1959f313-36b5-45c0-8b19-bc9577b8e9a3%20(1).usdz?v=1659300100586"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Consola Lunga</h5>
-                        <p class="card-text">Tapa en concreto, terminación lisa, Patas de hierro en forma de z que le da
-                            un
-                            porte único. Su largo es ideal para aprovechar la colocación de objetos funcionales y
-                            decorativos.
-                        </p>
-                        <P id="disponible"><b>Disponible en varios colores.</b></P>
-                        <P id="medidas"><b>Medidas:</b> 145x45x65cm</P>
-                        <P id="precio"><b>Precio:</b> usd 485</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/Lunga45cm.glb?v=1659300056021"
+                                ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/1959f313-36b5-45c0-8b19-bc9577b8e9a3%20(1).usdz?v=1659300100586"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Consola Lunga</h5>
+                                <p class="card-text">Tapa en concreto, terminación lisa, Patas de hierro en forma de z
+                                    que le da
+                                    un
+                                    porte único. Su largo es ideal para aprovechar la colocación de objetos funcionales
+                                    y
+                                    decorativos.
+                                </p>
+                                <P id="disponible"><b>Disponible en varios colores.</b></P>
+                                <P id="medidas"><b>Medidas:</b> 145x45x65cm</P>
+                                <P id="precio"><b>Precio:</b> usd 485</P>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/bachita.glb?v=1659298360662"
-                        ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/bacha.usdz?v=1659298363725"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Bacha Øle</h5>
-                        <p class="card-text">Circular, un must si sos fan del color y materiales naturales en tu
-                            espacio.
-                            Sin dudas se va a llevar todas las miradas.</p>
-                        <P id="medidas"><b>Medidas:</b> Diámetro: 42cm | altura interna 6cm | altura externa 13.8 cm</P>
-                        <P id="drenaje"><b>Drenaje:</b> 6.5x4.8x2.7cm</P>
-                        <P id="precio"><b>Precio:</b> usd 220</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/bachita.glb?v=1659298360662"
+                                ios-src="https://cdn.glitch.global/bd24976a-9503-46dc-a1d6-8e2355c14a02/bacha.usdz?v=1659298363725"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Bacha Øle</h5>
+                                <p class="card-text">Circular, un must si sos fan del color y materiales naturales en tu
+                                    espacio.
+                                    Sin dudas se va a llevar todas las miradas.</p>
+                                <P id="medidas"><b>Medidas:</b> Diámetro: 42cm | altura interna 6cm | altura externa
+                                    13.8 cm</P>
+                                <P id="drenaje"><b>Drenaje:</b> 6.5x4.8x2.7cm</P>
+                                <P id="precio"><b>Precio:</b> usd 220</P>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/GreenTable.glb?v=1660774681654"
-                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Green%20table.usdz?v=1660774682467"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Mesa de centro Myg</h5>
-                        <p class="card-text">Con base de hierro, tapa de concreto color negro y textura “wooden” creamos
-                            esta hermosa mesa,
-                            la cual no necesita más que un buen sofá para sentarse a disfrutarla.
-                            Disponible en varios colores.</p>
-                        <P id="medidas"><b>Medidas:</b> diámetro 80 x 45 cm de altura.</P>
-                        <P id="precio"><b>Precio:</b> usd 345</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/GreenTable.glb?v=1660774681654"
+                                ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Green%20table.usdz?v=1660774682467"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa de centro Myg</h5>
+                                <p class="card-text">Con base de hierro, tapa de concreto color negro y textura “wooden”
+                                    creamos
+                                    esta hermosa mesa,
+                                    la cual no necesita más que un buen sofá para sentarse a disfrutarla.
+                                    Disponible en varios colores.</p>
+                                <P id="medidas"><b>Medidas:</b> diámetro 80 x 45 cm de altura.</P>
+                                <P id="precio"><b>Precio:</b> usd 345</P>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/ville.glb?v=1660775936406"
-                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/ville.usdz?v=1660775936170"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Mesa de comedor Ville</h5>
-                        <p class="card-text">Su forma circular y pata central ayuda a optimizar la cantidad de
-                            comensales así como su medida
-                            la trasforma en la mesa más práctica para a cualquier espacio.
-                            Su veta de madera le aporta un carácter especial y está disponible en varios colores.</p>
-                        <P id="medidas"><b>Medidas:</b> diámetro 80 x 75 cm de altura.</P>
-                        <P id="precio"><b>Precio:</b> usd 445</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/ville.glb?v=1660775936406"
+                                ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/ville.usdz?v=1660775936170"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa de comedor Ville</h5>
+                                <p class="card-text">Su forma circular y pata central ayuda a optimizar la cantidad de
+                                    comensales así como su medida
+                                    la trasforma en la mesa más práctica para a cualquier espacio.
+                                    Su veta de madera le aporta un carácter especial y está disponible en varios
+                                    colores.</p>
+                                <P id="medidas"><b>Medidas:</b> diámetro 80 x 75 cm de altura.</P>
+                                <P id="precio"><b>Precio:</b> usd 445</P>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/BrownTable.glb?v=1660775008435"
-                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Brow%20table.usdz?v=1660775010536"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Mesa/ Banco Organic</h5>
-                        <p class="card-text">El más versátil gracias a sus clásicas patas Hairping.
-                            Con textura Wooden, así le llamamos a la hermosa veta de madera reflejada en el concreto.
-                            Disponible en varios colores</p>
-                        <P id="medidas"><b>Medidas:</b> 120 x 45 x 3 cm</P>
-                        <P id="precio"><b>Precio:</b> Usd 320</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                                src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/BrownTable.glb?v=1660775008435"
+                                ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Brow%20table.usdz?v=1660775010536"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa/ Banco Organic</h5>
+                                <p class="card-text">El más versátil gracias a sus clásicas patas Hairping.
+                                    Con textura Wooden, así le llamamos a la hermosa veta de madera reflejada en el concreto.
+                                    Disponible en varios colores</p>
+                                <P id="medidas"><b>Medidas:</b> 120 x 45 x 3 cm</P>
+                                <P id="precio"><b>Precio:</b> Usd 320</P>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/YellowTable%20(1).glb?v=1660775477216"
-                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Yellow.usdz?v=1660775479189"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Mesa de arrimo Møde</h5>
-                        <p class="card-text">Divertida, cómoda y funcional son características que definen a nuestra
-                            mesa de arrimo, o porqué
-                            no, mesa de luz...</p>
-                        <P id="medidas"><b>Medidas:</b> diámetro 60 x 65cm de altura.</P>
-                        <P id="precio"><b>Precio:</b> Precio uso 245</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                            src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/YellowTable%20(1).glb?v=1660775477216"
+                            ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/Yellow.usdz?v=1660775479189"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa de arrimo Møde</h5>
+                                <p class="card-text">Divertida, cómoda y funcional son características que definen a nuestra
+                                    mesa de arrimo, o porqué
+                                    no, mesa de luz...</p>
+                                <P id="medidas"><b>Medidas:</b> diámetro 60 x 65cm de altura.</P>
+                                <P id="precio"><b>Precio:</b> Precio uso 245</P>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/consolapil.glb?v=1660776450166"
-                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/consolapil.usdz?v=1660776449704"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Consola Pil</h5>
-                        <p class="card-text">Tapa en concreto, bordes curvos y textura wooden. Patas de hierro.
-                            Disponible en varios colores.</p>
-                        <P id="medidas"><b>Medidas:</b> 115x45x65cm</P>
-                        <P id="precio"><b>Precio:</b> usd 365</P>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                            src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/consolapil.glb?v=1660776450166"
+                            ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/consolapil.usdz?v=1660776449704"
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Consola Pil</h5>
+                                <p class="card-text">Tapa en concreto, bordes curvos y textura wooden. Patas de hierro.
+                                    Disponible en varios colores.</p>
+                                <P id="medidas"><b>Medidas:</b> 115x45x65cm</P>
+                                <P id="precio"><b>Precio:</b> usd 365</P>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/blancabeton.glb?v=1652296437290"
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                            src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/blancabeton.glb?v=1652296437290"
                         ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/blancabeton.usdz?v=1652296435874"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Mesa Svamp</h5>
-                        <p class="card-text">versión comedor, toda en cemento estucado y veteado. Realizada a mano.</p>
-                        <P id="medidas"><b>Medidas:</b> 1 metro de diámetro y altura 75cm.</P>
-                        <P id="precio"><b>Precio:</b> Precio uso 495</P>
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa Svamp</h5>
+                                <p class="card-text">versión comedor, toda en cemento estucado y veteado. Realizada a mano.</p>
+                                <P id="medidas"><b>Medidas:</b> 1 metro de diámetro y altura 75cm.</P>
+                                <P id="precio"><b>Precio:</b> Precio uso 495</P>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesa.glb?v=1652719005805"
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                            src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesa.glb?v=1652719005805"
                         ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/rojitabeton%20(2).usdz?v=1652719006560"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Mesa Svamp</h5>
-                        <p class="card-text">versión comedor, toda en cemento estucado y veteado. Realizada a mano.</p>
-                        <P id="medidas"><b>Medidas:</b> 1 metro de diámetro y altura 75cm.</P>
-                        <P id="precio"><b>Precio:</b> Precio uso 495</P>
+                                camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa Svamp</h5>
+                                <p class="card-text">versión comedor, toda en cemento estucado y veteado. Realizada a mano.</p>
+                                <P id="medidas"><b>Medidas:</b> 1 metro de diámetro y altura 75cm.</P>
+                                <P id="precio"><b>Precio:</b> Precio uso 495</P>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <model-viewer id="model2"
+                            src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesaazul.glb?v=1652478742366"
+                            ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesaazul.usdz?v=1652478751938"
+                            camera-controls auto-rotate ar>
+                            </model-viewer>
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa Svamp</h5>
+                                <p class="card-text">versión comedor, toda en cemento estucado y veteado. Realizada a mano.</p>
+                                <P id="medidas"><b>Medidas:</b> 1 metro de diámetro y altura 75cm.</P>
+                                <P id="precio"><b>Precio:</b> Precio uso 495</P>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <model-viewer
-                        src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesaazul.glb?v=1652478742366"
-                        ios-src="https://cdn.glitch.global/9798d9ca-bdd6-4c76-9d8c-22fe96272ae1/mesaazul.usdz?v=1652478751938"
-                        camera-controls auto-rotate ar>
-                        <button slot="ar-button" id="ar-button">
-                            👋 Activar AR
-                        </button>
-                    </model-viewer>
-                    <div class="card-body">
-                        <h5 class="card-title">Mesa Svamp</h5>
-                        <p class="card-text">versión comedor, toda en cemento estucado y veteado. Realizada a mano.</p>
-                        <P id="medidas"><b>Medidas:</b> 1 metro de diámetro y altura 75cm.</P>
-                        <P id="precio"><b>Precio:</b> Precio uso 495</P>
+        </section>
+        <!-- Facts End -->
+        <!-- Facts Start -->
+        <section id="card-gruop">
+            <div class="container-fluid bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                            <i class="fa fa-certificate fa-3x text-secondary mb-3"></i>
+                            <h1 class="text-white mb-2">71%</h1>
+                            <p class="text-white mb-0">de los consumidores dicen que comprarían con más frecuencia si
+                                usaran
+                                AR.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                            <i class="fa fa-users-cog fa-3x text-secondary mb-3"></i>
+                            <h1 class="text-white mb-2">61%</h1>
+                            <p class="text-white mb-0">de los consumidores dicen que prefieren minoristas con
+                                experiencias
+                                AR.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                            <i class="fa fa-users fa-3x text-secondary mb-3"></i>
+                            <h1 class="text-white mb-2">40%</h1>
+                            <p class="text-white mb-0">de los consumidores dicen que pagarían más por un producto que
+                                pudieran personalizar en AR.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-check fa-3x text-secondary mb-3"></i>
+                            <h1 class="text-white mb-2">5%</h1>
+                            <p class="text-white mb-0">del uso de AR estará en el comercio minorista para 2022.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Facts End -->
+        </section>
+
+
+        <section id="footer">
+            <!-- Footer Start -->
+            <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white h5 mb-4">Dirección<span></span></p>
+                            <p><i class="fa fa-map-marker-alt me-3"></i>Montevideo Uruguay</p>
+                            <p><i class="fa fa-phone-alt me-3"></i>+59895319202</p>
+                            <p><i class="fa fa-envelope me-3"></i>maxigrimblat@gmail.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white h5 mb-4">ENLACE RÁPIDO
+                                <span></span>
+                            </p>
+                            <a class="btn btn-link" href="">Nosotros</a>
+                            <a class="btn btn-link" href="">Contacto</a>
+                            <a class="btn btn-link" href="">Privacy Policy</a>
+                            <a class="btn btn-link" href="">Terms & Condition</a>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white h5 mb-4">Galeria<span></span></p>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <img class="img-fluid" src="../img/portfolio-1.jpg" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="../img/portfolio-2.jpg" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="../img/portfolio-3.jpg" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="../img/portfolio-4.jpg" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="../img/portfolio-5.jpg" alt="Image">
+                                </div>
+                                <div class="col-4">
+                                    <img class="img-fluid" src="../img/portfolio-6.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white h5 mb-4">¿Tienes una idea para desarrollar?<span></span>
+                            </p>
+                            <p>¡Sí! hablemos
+                            </p>
+                            <div class="position-relative w-100 mt-3">
+                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                    placeholder="Your Email" style="height: 48px;">
+                                <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                        class="fa fa-paper-plane text-primary fs-4"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-lg-5">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="#">Aumenta</a>, All Right Reserved.
+
+                                Designed By <a class="border-bottom">Maximiliano Grimblat</a><br><br>
+                            </div>
+                            <div class="col-md-6 text-center text-md-end">
+                                <div class="footer-menu">
+                                    <a href="">Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
         </div>
-    </section>
 
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    </section>
-    <section id="footer">
-        <footer>
-        </footer>
-    </section>
+        <!-- Template Javascript -->
+        <script src="../js/main.js"></script>
 
+        <!-- Moderviewe -->
+        <script src="https://kit.fontawesome.com/a1e2cb9fee.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+        </script>
 
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a1e2cb9fee.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-    </script>
+        <!-- carrousel -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
