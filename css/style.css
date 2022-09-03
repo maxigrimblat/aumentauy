@@ -1076,3 +1076,29 @@ h6,
     width: 100%;
     height: 500px;
 }
+
+.card {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#clientes{
+    margin-top: 50px!important;
+    justify-items: center;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 150!important;
+    height: 100!important;
+}
+
+.partnerList-0-2-15 {
+    margin: 0 1rem 0 1rem;
+    display: grid;
+    padding: 32px 0;
+    row-gap: 16px;
+    column-gap: 16px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 316px);
+}
