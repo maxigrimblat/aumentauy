@@ -1039,3 +1039,8 @@ h6,
 #model4 {
     height: 500px;
 }
+
+#frame{
+    width: 100%;
+    height: 500px;
+}
