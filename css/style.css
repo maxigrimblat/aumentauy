@@ -561,6 +561,27 @@ h6,
     bottom: 0;
 }
 
+/*** Participación inigualable ***/
+
+#sobrenosotros {
+    width: 100%!important;
+    height: 600px!important;
+}
+
+@media screen {
+    @media screen and (max-width: 600px) {
+        #sobrenosotros {
+            height: 450px!important;
+            width: 320px!important;
+        }
+    }
+}
+
+#sobre-ar {
+    margin-bottom: 150px;
+}
+
+
 
 /*** Project Portfolio ***/
 #portfolio-flters li {
@@ -1093,12 +1114,7 @@ h6,
     height: 100!important;
 }
 
-.partnerList-0-2-15 {
-    margin: 0 1rem 0 1rem;
-    display: grid;
-    padding: 32px 0;
-    row-gap: 16px;
-    column-gap: 16px;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, 316px);
+.img-fluid {
+    height: 150px!important;
 }
+
